@@ -14,6 +14,7 @@ This portfolio website showcases the projects that I have built. A JSON file sto
  
  # html&css
  Treehouse provided all the templates html and css.
+ I've added my own style to the project.
 
  # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development.
