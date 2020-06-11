@@ -4,9 +4,11 @@ html(class="no-js" lang="en" dir="ltr")
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Portfolio Site
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
-    link(rel='stylesheet', href='/static/css/foundation.css')
+    title Diana Vozanu | Front-End Developer in London, UK
+    link(href="/static/images/favicon.ico", rel="shortcut icon")
+    link(href='https://fonts.googleapis.com/css?family=Nunito:400,600|Roboto:400,700', rel='stylesheet')
+    link(href="https://use.fontawesome.com/releases/v5.5.0/css/all.css", rel="stylesheet", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
+    link(rel='stylesheet', href='/static/css/foundation.min.css')
     link(rel='stylesheet', href='/static/css/style.css')
   body
     #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
@@ -14,30 +16,31 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src='https://placehold.it/550x350')
+            a(href="/")
+              img(src='/static/img/profile-diana.png', alt='profile image')
           .cell.auto
-
-            //- Add your name here.
-            h5 Name
-
-            //- Add text here to describe who you are, what you do, and why you are so awesome.
+            h5 Diana Vozanu
             p.text-light
-              | Description
-
-            //- Add about page route to the href below. 
-            a(href='') Learn More →
-
+              | I am a remote front-end developer in London, UK
+            a(href='/about') Learn More →
+            hr
+            a(href="/") portfolio 
+            br
+            a(href="/static/media/diana-vozanu-cv.pdf", target='_blank') Resume
+            hr
+            ul.social
+              li
+                a(href='https://www.linkedin.com/in/dianavoz/', target='_blank', aria-label="Linkedin")
+                  i.fab.fa-linkedin-in
+              li
+                a(href='https://github.com/dianavoz', target='_blank', aria-label="Github")
+                  i.fab.fa-github
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
-
-          //- Add your name here.  This is for the mobile screen sized version.
-          span.title-bar-title Name
-      block content
-        
-
-      
+          span.title-bar-title Diana Vozanu
+      block content   
   script(src='/static/js/vendor/jquery.js')
   script(src='/static/js/vendor/what-input.js')
   script(src='/static/js/vendor/foundation.js')
